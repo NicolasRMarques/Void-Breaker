@@ -8,7 +8,6 @@ else if (score >= 5000){
 
 if (keyboard_check_pressed(vk_enter))
 {
-    //inicia ou reinicia o jogo de acordo com a sala
     switch(room)
     {
         case rm_inicio:
