@@ -1,7 +1,7 @@
 if (lives <= 0){
 	room_goto(rm_derrota);
 }
-else if (score >= 10000){
+else if (score >= 5000){
 	score = 0;
 	room_goto(rm_vitoria);
 }

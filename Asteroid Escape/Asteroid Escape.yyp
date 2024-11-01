@@ -30,7 +30,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.8.0.169",
+    "IDEVersion":"2024.6.2.162",
   },
   "name":"Asteroid Escape",
   "resources":[
@@ -52,6 +52,7 @@
     {"id":{"name":"snd_nave","path":"sounds/snd_nave/snd_nave.yy",},},
     {"id":{"name":"snd_tiro","path":"sounds/snd_tiro/snd_tiro.yy",},},
     {"id":{"name":"spr_ammo","path":"sprites/spr_ammo/spr_ammo.yy",},},
+    {"id":{"name":"spr_ammoBox","path":"sprites/spr_ammoBox/spr_ammoBox.yy",},},
     {"id":{"name":"spr_asteroideG","path":"sprites/spr_asteroideG/spr_asteroideG.yy",},},
     {"id":{"name":"spr_asteroideM","path":"sprites/spr_asteroideM/spr_asteroideM.yy",},},
     {"id":{"name":"spr_asteroideP","path":"sprites/spr_asteroideP/spr_asteroideP.yy",},},

@@ -14,6 +14,15 @@ switch (room)
 	        //escreve as vidas restantes
 			draw_text(20, 100, "Especial: " + string(global.special));
 	        //escreve as vidas restantes
+			if (global.ammo >= 66) {
+			draw_sprite(spr_ammo, 0, display_get_gui_width() - 100, 100);
+			} else if (global.ammo >= 33) {
+				draw_sprite(spr_ammo, 1,display_get_gui_width() - 100, 100);
+			} else if (global.ammo > 0) {
+				draw_sprite(spr_ammo, 2, display_get_gui_width() - 100, 100);
+			} else {
+				draw_sprite(spr_ammo, 3,display_get_gui_width() - 100,100);
+			}
 		} else {
 			var c = c_white;
 			draw_set_halign(fa_center);
@@ -30,11 +39,12 @@ switch (room)
 	    draw_text_transformed_color(room_width/2, room_height/5, "Asteroid Escape", 3, 3, 0, c, c, c, c, 1);
 	    // comando que aumenta e muda o texto de cor
 		draw_text(room_width/2, room_height/5+200,
-		    @"Faça 10.000 pontos para ganhar
+		    @"Faça 5.000 pontos para ganhar
 
 W: mover
 A/S: virar
-CLICK: atirar
+L CLICK: atirar
+R CLICK: acelerar
 ESPAÇO: especial
 NUM 0: pause
 

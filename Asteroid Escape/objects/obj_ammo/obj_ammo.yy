@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_ammo",
-    "path":"sprites/spr_ammo/spr_ammo.yy",
+    "name":"spr_ammoBox",
+    "path":"sprites/spr_ammoBox/spr_ammoBox.yy",
   },
   "spriteMaskId":null,
   "visible":true,

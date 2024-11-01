@@ -1,37 +1,33 @@
 if (keyboard_check(ord("W"))){
-    speed = 8;
-    // movimentação da nave
+    speed = shipSpeed;
 	instance_create_layer(x, y, "Instances", obj_particula); 
-	//rastro da nave
 	audio_play_sound(snd_nave,1,false);
 }
 else{
     speed = 0;
-    // interrompe o movimento da nave
 }
 
 if (keyboard_check(ord("A"))){
-    direction += 4;
-    // gira a nave no sentido anti-horário
+    direction += turnSpeed;
 }else if (keyboard_check(ord("D"))){
-    direction -= 4;
-    // gira a nave no sentido horário
+    direction -= turnSpeed;
 }
 
 image_angle = direction;
-// faz a imagem acompanhar a rotação da nave
 
 move_wrap(true, true, 0);
-// teleporta a nave quando chega na borda da cena (room)
 
-if (mouse_check_button_pressed(mb_left)) {
-	audio_play_sound(snd_tiro,1,false);
-    var inst = instance_create_layer(x, y, "Instances", obj_tiro);
-	inst.direction = direction;
-	inst.speed = 20;
-	inst.image_xscale = 2;
-	inst.image_yscale = 0.5;
-	inst.image_angle = direction;
+if(global.ammo > 0){
+	if (mouse_check_button_pressed(mb_left)) {
+		global.ammo -= 1;
+		audio_play_sound(snd_tiro,1,false);
+	    var inst = instance_create_layer(x, y, "Instances", obj_tiro);
+		inst.direction = direction;
+		inst.speed = 20;
+		inst.image_xscale = 2;
+		inst.image_yscale = 0.5;
+		inst.image_angle = direction;
+	}
 }
 
 if (global.special > 0){
@@ -50,5 +46,21 @@ if (global.special > 0){
 		}
 		global.special -= 1;
 	}
+}
+
+if (mouse_check_button(mb_right)) {
+    shipSpeed = 10;
+    turnSpeed = 8;
+} else {
+    shipSpeed = 8;
+    turnSpeed = 4;
+}
+
+if (global.invincible_time > 0) {
+    image_alpha = 0.5;
+	global.invincible_time -= 1;
+
+} else {
+    image_alpha = 1;
 }
 
