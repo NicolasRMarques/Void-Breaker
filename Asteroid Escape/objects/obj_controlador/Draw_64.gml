@@ -22,9 +22,10 @@ switch (room)
 			
 		} else {
 			var c = c_white;
-			draw_set_halign(fa_center);
-			draw_set_valign(fa_middle);
 			draw_text_transformed_colour(room_width/2, room_height/2, "Pause", 3, 3, 0, c, c, c, c, 1);
+			draw_set_valign(fa_left);
+			draw_text_transformed_colour(150, 20, "F1 - Reset", 1, 1, 0, c, c, c, c, 1);
+			
 		}
 		break;
 
