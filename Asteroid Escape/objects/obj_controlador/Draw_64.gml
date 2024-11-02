@@ -4,10 +4,11 @@ switch (room)
 {
     case rm_jogo:
 		if(!global.pause){
-	        draw_set_halign(fa_left);
-	        draw_text(20, 20, "Pontos: " + string(score));
-	        draw_text(20, 60, "Vidas: " + string(lives));
-			draw_text(20, 100, "Especial: " + string(global.special));
+	        draw_text(display_get_gui_width()/2, 60, "Pontos: " + string(score));
+			for (var i = 0; i < lives; i += 1)
+			{
+			    draw_sprite(spr_life, 0, 50 + i * 50, 70);
+			}
 			if (global.ammo >= 66) {
 			draw_sprite(spr_ammo, 0, display_get_gui_width() - 100, 100);
 			} else if (global.ammo >= 33) {
@@ -17,6 +18,8 @@ switch (room)
 			} else {
 				draw_sprite(spr_ammo, 3,display_get_gui_width() - 100,100);
 			}
+			draw_sprite(spr_specialAmmo, global.special, display_get_gui_width() - 105, 250);
+			
 		} else {
 			var c = c_white;
 			draw_set_halign(fa_center);

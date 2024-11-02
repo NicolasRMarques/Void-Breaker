@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_life",
-    "path":"sprites/spr_life/spr_life.yy",
+    "name":"spr_lifeBox",
+    "path":"sprites/spr_lifeBox/spr_lifeBox.yy",
   },
   "spriteMaskId":null,
   "visible":true,

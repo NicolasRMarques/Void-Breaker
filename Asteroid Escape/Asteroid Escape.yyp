@@ -30,7 +30,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.8.0.169",
+    "IDEVersion":"2024.6.2.162",
   },
   "name":"Asteroid Escape",
   "resources":[
@@ -60,9 +60,11 @@
     {"id":{"name":"spr_inimigo","path":"sprites/spr_inimigo/spr_inimigo.yy",},},
     {"id":{"name":"spr_laser","path":"sprites/spr_laser/spr_laser.yy",},},
     {"id":{"name":"spr_life","path":"sprites/spr_life/spr_life.yy",},},
+    {"id":{"name":"spr_lifeBox","path":"sprites/spr_lifeBox/spr_lifeBox.yy",},},
     {"id":{"name":"spr_nave","path":"sprites/spr_nave/spr_nave.yy",},},
     {"id":{"name":"spr_particula","path":"sprites/spr_particula/spr_particula.yy",},},
     {"id":{"name":"spr_space","path":"sprites/spr_space/spr_space.yy",},},
+    {"id":{"name":"spr_specialAmmo","path":"sprites/spr_specialAmmo/spr_specialAmmo.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
