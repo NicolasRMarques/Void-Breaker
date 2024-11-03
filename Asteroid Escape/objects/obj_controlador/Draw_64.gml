@@ -30,6 +30,15 @@ switch (room)
 		break;
 
     case rm_inicio:
+		
+		if(global.costumesGUI == true){
+			var c = c_yellow;
+			draw_set_halign(fa_center);
+			draw_text_transformed_color(room_width/2, room_height/5, "Trajes", 3, 3, 0, c, c, c, c, 1);
+			draw_sprite(spr_arrows, 0,room_width / 2, room_height / 2);
+			break;
+		}
+		
 	    var c = c_yellow;
 	    draw_set_halign(fa_center);
 	    draw_text_transformed_color(room_width/2, room_height/5, "Asteroid Escape", 3, 3, 0, c, c, c, c, 1);
@@ -44,6 +53,7 @@ ESPAÇO: especial
 NUM 0: pause
 
 >>Aperte ENTER para iniciar<<");
+
 		break;
 
 	case rm_derrota:

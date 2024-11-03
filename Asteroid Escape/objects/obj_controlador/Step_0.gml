@@ -11,14 +11,18 @@ if (keyboard_check_pressed(vk_enter))
     switch(room)
     {
         case rm_inicio:
-			score = 0;
-            room_goto(rm_jogo);
+			if(!global.costumesGUI){
+				score = 0;
+				room_goto(rm_jogo);
+			}
             break;
         case rm_vitoria:
-            game_restart();
+			score = 0;
+            room_goto(rm_inicio);
             break;
         case rm_derrota:
-            game_restart();
+			score = 0;
+            room_goto(rm_inicio);
             break;
     }
 }
@@ -33,10 +37,11 @@ if(room == rm_jogo){
 	        instance_activate_all(); 
 	    }
 	}
-}
-
-if(global.pause){
-	if(keyboard_check_pressed(vk_f1)){
-		game_restart();
+	
+	if(global.pause){
+		if(keyboard_check_pressed(vk_f1)){
+			score = 0;
+			room_goto(rm_inicio);
 	}
+}
 }
