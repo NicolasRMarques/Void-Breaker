@@ -32,6 +32,7 @@ if(global.ammo > 0){
 
 if (global.special > 0){
 	if (keyboard_check_pressed(vk_space)) {
+		audio_play_sound(snd_energy,1,false);
 		var dir = 0
 		repeat(10){
 		    var inst = instance_create_layer(x, y, "Instances", obj_tiro);
