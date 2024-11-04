@@ -24,3 +24,14 @@ if (global.costumesGUI == true) {
         }
     }
 }
+
+if(keyboard_lastkey == global.konami_code[global.konami_count]){
+	global.konami_count++;
+}
+
+if(global.konami_count == 10){
+	global.konami_activated = true;
+	audio_play_sound(snd_picking,1,false)
+	global.konami_count = 0
+}
+	

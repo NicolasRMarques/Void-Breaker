@@ -5,9 +5,14 @@ switch (room)
     case rm_fase1:
 		if(!global.pause){
 	        draw_text(display_get_gui_width()/2, 40, "Pontos: " + string(score));
-			for (var i = 0; i < lives; i += 1)
-			{
-			    draw_sprite_ext(spr_life, 0, 50 + i * (50 * global.scaleGUI), 50, global.scaleGUI, global.scaleGUI, 0, -1, 1);
+			
+			var max_per_row = 5;
+
+			for (var i = 0; i < lives; i += 1) {
+			    var positionX = 50 + (i % max_per_row) * (50 * global.scaleGUI);
+			    var positionY = 50 + (i div max_per_row) * (50 * global.scaleGUI);
+
+			    draw_sprite_ext(spr_life, 0, positionX, positionY, global.scaleGUI, global.scaleGUI, 0, -1, 1);
 			}
 			if (global.ammo >= 66) {
 				draw_sprite_ext(spr_ammo, 0, display_get_gui_width() - 100, 60, global.scaleGUI, global.scaleGUI, 0, -1, 1);
@@ -22,9 +27,9 @@ switch (room)
 			
 		} else {
 			var c = c_white;
-			draw_text_transformed_colour(display_get_gui_width()/2, display_get_height()/2, "Pause", 3, 3, 0, c, c, c, c, 1);
+			draw_text_transformed_colour(display_get_gui_width()/2, display_get_height()/2 - 100, "Pause", 3, 3, 0, c, c, c, c, 1);
 			draw_set_valign(fa_left);
-			draw_text_transformed_colour(150, 20, "F1 - Reset", 1, 1, 0, c, c, c, c, 1);
+			draw_text_transformed_colour(80, 20, "F1 - Reset", 1, 1, 0, c, c, c, c, 1);
 			
 		}
 		break;

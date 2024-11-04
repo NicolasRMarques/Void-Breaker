@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"snd_energy",
+  "%Name":"snd_special",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,8 +9,8 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.365714,
-  "name":"snd_energy",
+  "duration":0.888,
+  "name":"snd_special",
   "parent":{
     "name":"Sons",
     "path":"folders/Sons.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_energy.wav",
+  "soundFile":"snd_special.mp3",
   "type":0,
   "volume":1.0,
 }
