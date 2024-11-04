@@ -1,6 +1,6 @@
 if (global.costumesGUI == true) {
     if (!instance_exists(obj_naveCostumes)) {
-        var spaceShip = instance_create_layer(room_width / 2, room_height / 2, "Instances", obj_naveCostumes);
+        var spaceShip = instance_create_layer(room_width / 2, room_width / 2, "Instances", obj_naveCostumes);
     } else {
         var spaceShip = instance_find(obj_naveCostumes, 0);
     }
