@@ -8,8 +8,8 @@ alarm[1] = 60;
 alarm[2] = 60;
 alarm[3] = 60;
 
-if (room == rm_jogo){
-	audio_play_sound(snd_musica,2,true);
+if (!audio_is_playing(snd_placeholder)){
+	audio_play_sound(snd_placeholder,100,true);
 }
 
 global.pause = false;

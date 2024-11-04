@@ -5,11 +5,11 @@ if (global.costumesGUI == true) {
         var spaceShip = instance_find(obj_naveCostumes, 0);
     }
 
-    if (keyboard_check_pressed(vk_right)) {
+    if (keyboard_check_pressed(vk_right) or keyboard_check_pressed(ord("D"))) {
         spaceShip.image_index = (spaceShip.image_index + 1) mod spaceShip.image_number;
     }
 
-    if (keyboard_check_pressed(vk_left)) {
+    if (keyboard_check_pressed(vk_left) or keyboard_check_pressed(ord("A"))) {
         spaceShip.image_index = (spaceShip.image_index - 1 + spaceShip.image_number) mod spaceShip.image_number;
     }
 	

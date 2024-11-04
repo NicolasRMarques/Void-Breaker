@@ -2,7 +2,7 @@ draw_set_font(fnt_retro);
 
 switch (room)
 {
-    case rm_jogo:
+    case rm_fase1:
 		if(!global.pause){
 	        draw_text(display_get_gui_width()/2, 60, "Pontos: " + string(score));
 			for (var i = 0; i < lives; i += 1)

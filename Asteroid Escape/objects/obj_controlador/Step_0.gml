@@ -13,7 +13,7 @@ if (keyboard_check_pressed(vk_enter))
         case rm_inicio:
 			if(!global.costumesGUI){
 				score = 0;
-				room_goto(rm_jogo);
+				room_goto(rm_fase1);
 			}
             break;
         case rm_vitoria:
@@ -27,7 +27,7 @@ if (keyboard_check_pressed(vk_enter))
     }
 }
 
-if(room == rm_jogo){
+if(room == rm_fase1){
 	if (keyboard_check_pressed(vk_numpad0)) {
 	    global.pause = !global.pause;
 
