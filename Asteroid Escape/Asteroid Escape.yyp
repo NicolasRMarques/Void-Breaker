@@ -74,6 +74,7 @@
     {"id":{"name":"spr_portalA","path":"sprites/spr_portalA/spr_portalA.yy",},},
     {"id":{"name":"spr_portalB","path":"sprites/spr_portalB/spr_portalB.yy",},},
     {"id":{"name":"spr_specialAmmo","path":"sprites/spr_specialAmmo/spr_specialAmmo.yy",},},
+    {"id":{"name":"spr_star","path":"sprites/spr_star/spr_star.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",

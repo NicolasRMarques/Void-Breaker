@@ -4,7 +4,7 @@ if(room == rm_inicio){
 
 if (global.konami_activated){
 	lives = 10;
-	global.special = 9;
+	global.special = 99;
 	global.ammo = 999;
 	global.invincible_time = 0;
 } else {
