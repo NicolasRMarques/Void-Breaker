@@ -1,4 +1,6 @@
 draw_set_font(fnt_retro);
+draw_set_halign(fa_center);
+draw_set_valign(fa_middle);
 
 switch (room)
 {
@@ -30,9 +32,10 @@ switch (room)
 			
 		} else {
 			var c = c_white;
-			draw_text_transformed_colour(display_get_gui_width()/2, display_get_height()/3 - 100, "Pause", 3, 3, 0, c, c, c, c, 1);
-			draw_set_valign(fa_left);
-			draw_text_transformed_colour(80, 20, "F1 - Reset", 1, 1, 0, c, c, c, c, 1);
+			draw_text_transformed_colour(display_get_gui_width()/2, display_get_gui_height()/2, "Pause", 3, 3, 0, c, c, c, c, 1);
+			draw_set_halign(fa_left);
+			draw_text_transformed_colour(30, 30, "F1 - Reset", 1, 1, 0, c, c, c, c, 1);
+			draw_set_halign(fa_center);
 			
 		}
 		break;
@@ -41,16 +44,14 @@ switch (room)
 		
 		if(global.costumesGUI == true){
 			var c = c_yellow;
-			draw_set_halign(fa_center);
-			draw_text_transformed_color(display_get_gui_width()/2, display_get_height()/10, "Trajes", 3, 3, 0, c, c, c, c, 1);
-			draw_sprite_ext(spr_arrows, 0, display_get_gui_width()/2, display_get_height() / 3.4, global.scaleGUI, global.scaleGUI, 0, -1, 1);
+			draw_text_transformed_color(display_get_gui_width()/2, display_get_gui_height()/8, "Trajes", 3, 3, 0, c, c, c, c, 1);
+			draw_sprite_ext(spr_arrows, 0, display_get_gui_width()/2, display_get_gui_height() / 2, global.scaleGUI, global.scaleGUI, 0, -1, 1);
 			break;
 		}
 		
 	    var c = c_yellow;
-	    draw_set_halign(fa_center);
-	    draw_text_transformed_color(display_get_gui_width()/2, display_get_height()/12, "Asteroid Escape", 3, 3, 0, c, c, c, c, 1);
-		draw_text(display_get_gui_width()/2, display_get_height()/4,
+	    draw_text_transformed_color(display_get_gui_width()/2, display_get_gui_height()/8, "Asteroid Escape", 3, 3, 0, c, c, c, c, 1);
+		draw_text(display_get_gui_width()/2, display_get_gui_height()/2,
 		    @"Faça 5.000 pontos para ganhar
 
 W: mover
@@ -65,17 +66,15 @@ NUM 0: pause
 		break;
 
 	case rm_derrota:
-	    draw_set_halign(fa_center);
 	    var c = c_red;
-	    draw_text_transformed_colour(display_get_gui_width()/2, display_get_height()/5, "GAME OVER", 3, 3, 0, c, c, c, c, 1);
-		draw_text(display_get_gui_width()/2, display_get_height()/5 + 120, "Score: " + string(score));
-	    draw_text(display_get_gui_width()/2, display_get_height()/5 + 200, "Aperte ENTER para Reiniciar");
+	    draw_text_transformed_colour(display_get_gui_width()/2, display_get_gui_height()/3, "GAME OVER", 3, 3, 0, c, c, c, c, 1);
+		draw_text(display_get_gui_width()/2, display_get_gui_height()/2, "Score: " + string(score));
+	    draw_text(display_get_gui_width()/2, display_get_gui_height()/2 + 50, "Aperte ENTER para Reiniciar");
 	    break;
 
 	case rm_vitoria:
-	    draw_set_halign(fa_center);
 	    var c = c_lime;
-	    draw_text_transformed_colour(display_get_gui_width()/2, display_get_height()/5, "Vitória!", 3, 3, 0, c, c, c, c, 1);
-	    draw_text(display_get_gui_width()/2, display_get_height()/5 + 100, "Aperte ENTER para Reiniciar");
+	    draw_text_transformed_colour(display_get_gui_width()/2, display_get_gui_height()/3, "Vitória!", 3, 3, 0, c, c, c, c, 1);
+	    draw_text(display_get_gui_width()/2, display_get_gui_height()/2, "Aperte ENTER para Reiniciar");
 	    break;
 }
