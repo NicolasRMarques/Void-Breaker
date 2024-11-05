@@ -47,6 +47,8 @@ switch (room)
 			draw_text_transformed_color(display_get_gui_width()/2, display_get_gui_height()/8, "Trajes", 3, 3, 0, c, c, c, c, 1);
 			draw_sprite_ext(spr_arrows, 0, display_get_gui_width()/2, display_get_gui_height() / 2, global.scaleGUI, global.scaleGUI, 0, -1, 1);
 			break;
+		} else if (global.configGUI == true){
+			break;
 		}
 		
 	    var c = c_yellow;
