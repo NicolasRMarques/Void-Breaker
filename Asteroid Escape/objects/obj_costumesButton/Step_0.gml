@@ -16,6 +16,7 @@ if (global.costumesGUI == true) {
 	if(keyboard_check_pressed(vk_enter)){
 		global.costume = spaceShip.image_index;
 		global.costumesGUI = !global.costumesGUI;
+		image_index = 0;
 	}
 } else {
     if (instance_exists(obj_naveCostumes)) {
