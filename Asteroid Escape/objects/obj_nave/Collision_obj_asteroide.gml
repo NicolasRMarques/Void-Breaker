@@ -19,11 +19,11 @@ if (global.invincible_time == 0){
         
 	    }
 	}
-}
-
-if(lives <= 0){
+	
+	if(lives <= 0){
 	instance_destroy();
-} else {
-	global.invincible_time = 60;
+	} else {
+		global.invincible_time = 120;
+	}
 }
 

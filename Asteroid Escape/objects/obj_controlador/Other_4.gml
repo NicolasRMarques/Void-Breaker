@@ -7,6 +7,7 @@ alarm[0] = 60;
 alarm[1] = 60;
 alarm[2] = 60;
 alarm[3] = 60;
+alarm[4] = 60;
 
 if (!audio_is_playing(snd_placeholder)){
 	audio_play_sound(snd_placeholder,100,true);

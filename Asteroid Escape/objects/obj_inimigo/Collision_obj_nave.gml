@@ -1,4 +1,6 @@
 if(global.invincible_time == 0){
+	
+	global.invincible_time = 120;
 
 	lives -= 1;
 

@@ -30,7 +30,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.8.0.169",
+    "IDEVersion":"2024.6.2.162",
   },
   "name":"Asteroid Escape",
   "resources":[
@@ -44,6 +44,7 @@
     {"id":{"name":"obj_nave","path":"objects/obj_nave/obj_nave.yy",},},
     {"id":{"name":"obj_naveCostumes","path":"objects/obj_naveCostumes/obj_naveCostumes.yy",},},
     {"id":{"name":"obj_particula","path":"objects/obj_particula/obj_particula.yy",},},
+    {"id":{"name":"obj_portal","path":"objects/obj_portal/obj_portal.yy",},},
     {"id":{"name":"obj_tiro","path":"objects/obj_tiro/obj_tiro.yy",},},
     {"id":{"name":"rm_derrota","path":"rooms/rm_derrota/rm_derrota.yy",},},
     {"id":{"name":"rm_fase1","path":"rooms/rm_fase1/rm_fase1.yy",},},
@@ -70,6 +71,8 @@
     {"id":{"name":"spr_lifeBox","path":"sprites/spr_lifeBox/spr_lifeBox.yy",},},
     {"id":{"name":"spr_nave","path":"sprites/spr_nave/spr_nave.yy",},},
     {"id":{"name":"spr_particula","path":"sprites/spr_particula/spr_particula.yy",},},
+    {"id":{"name":"spr_portalA","path":"sprites/spr_portalA/spr_portalA.yy",},},
+    {"id":{"name":"spr_portalB","path":"sprites/spr_portalB/spr_portalB.yy",},},
     {"id":{"name":"spr_specialAmmo","path":"sprites/spr_specialAmmo/spr_specialAmmo.yy",},},
   ],
   "resourceType":"GMProject",

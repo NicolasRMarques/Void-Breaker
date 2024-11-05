@@ -27,7 +27,7 @@ switch (room)
 			
 		} else {
 			var c = c_white;
-			draw_text_transformed_colour(display_get_gui_width()/2, display_get_height()/2 - 100, "Pause", 3, 3, 0, c, c, c, c, 1);
+			draw_text_transformed_colour(display_get_gui_width()/2, display_get_height()/3 - 100, "Pause", 3, 3, 0, c, c, c, c, 1);
 			draw_set_valign(fa_left);
 			draw_text_transformed_colour(80, 20, "F1 - Reset", 1, 1, 0, c, c, c, c, 1);
 			
@@ -39,15 +39,15 @@ switch (room)
 		if(global.costumesGUI == true){
 			var c = c_yellow;
 			draw_set_halign(fa_center);
-			draw_text_transformed_color(display_get_gui_width()/2, display_get_height()/5, "Trajes", 3, 3, 0, c, c, c, c, 1);
-			draw_sprite_ext(spr_arrows, 0, display_get_gui_width()/2, display_get_height() / 2 - 60, global.scaleGUI, global.scaleGUI, 0, -1, 1);
+			draw_text_transformed_color(display_get_gui_width()/2, display_get_height()/10, "Trajes", 3, 3, 0, c, c, c, c, 1);
+			draw_sprite_ext(spr_arrows, 0, display_get_gui_width()/2, display_get_height() / 3.4, global.scaleGUI, global.scaleGUI, 0, -1, 1);
 			break;
 		}
 		
 	    var c = c_yellow;
 	    draw_set_halign(fa_center);
-	    draw_text_transformed_color(display_get_gui_width()/2, display_get_height()/5, "Asteroid Escape", 3, 3, 0, c, c, c, c, 1);
-		draw_text(display_get_gui_width()/2, display_get_height()/5+100,
+	    draw_text_transformed_color(display_get_gui_width()/2, display_get_height()/12, "Asteroid Escape", 3, 3, 0, c, c, c, c, 1);
+		draw_text(display_get_gui_width()/2, display_get_height()/4,
 		    @"Faça 5.000 pontos para ganhar
 
 W: mover
