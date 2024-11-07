@@ -21,5 +21,5 @@
   "sampleRate":44100,
   "soundFile":"snd_nave.wav",
   "type":0,
-  "volume":0.1,
+  "volume":0.2,
 }

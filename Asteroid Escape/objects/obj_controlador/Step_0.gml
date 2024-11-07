@@ -11,7 +11,7 @@ if (keyboard_check_pressed(vk_enter))
     switch(room)
     {
         case rm_inicio:
-			if(!global.costumesGUI){
+			if(!global.costumesGUI and !global.configGUI){
 				score = 0;
 				room_goto(rm_fase1);
 			}

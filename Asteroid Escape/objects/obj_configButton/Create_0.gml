@@ -1,4 +1,12 @@
 global.configGUI = false;
+global.configOption = 0;
+global.configSelection = 0;
+
+
+if (!variable_global_exists("configList")) {
+    global.configList = [["Janela", "Tela cheia"], ["Batata", "Morango"], ["Hoje", "Amanhã"]];
+}
+
 
 image_index = 0;
 image_speed = 0;

@@ -40,33 +40,6 @@ switch (room)
 		}
 		break;
 
-    case rm_inicio:
-		
-		if(global.costumesGUI == true){
-			var c = c_yellow;
-			draw_text_transformed_color(display_get_gui_width()/2, display_get_gui_height()/8, "Trajes", 3, 3, 0, c, c, c, c, 1);
-			draw_sprite_ext(spr_arrows, 0, display_get_gui_width()/2, display_get_gui_height() / 2, global.scaleGUI, global.scaleGUI, 0, -1, 1);
-			break;
-		} else if (global.configGUI == true){
-			break;
-		}
-		
-	    var c = c_yellow;
-	    draw_text_transformed_color(display_get_gui_width()/2, display_get_gui_height()/8, "Asteroid Escape", 3, 3, 0, c, c, c, c, 1);
-		draw_text(display_get_gui_width()/2, display_get_gui_height()/2,
-		    @"Faça 5.000 pontos para ganhar
-
-W: mover
-A/D: virar
-L CLICK: atirar
-R CLICK: acelerar
-ESPAÇO: especial
-NUM 0: pause
-
->>Aperte ENTER para iniciar<<");
-
-		break;
-
 	case rm_derrota:
 	    var c = c_red;
 	    draw_text_transformed_colour(display_get_gui_width()/2, display_get_gui_height()/3, "GAME OVER", 3, 3, 0, c, c, c, c, 1);
