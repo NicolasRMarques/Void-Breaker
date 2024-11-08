@@ -4,7 +4,7 @@ global.configSelection = 0;
 
 
 if (!variable_global_exists("configList")) {
-    global.configList = [["Janela", "Tela cheia"], ["640 x 640", "1080 x 1080", "1440 x 1440"], ["60 FPS", "120 FPS", "144 FPS"]];
+    global.configList = [["Janela", "Tela cheia"], ["640 x 640", "1080 x 1080", "1440 x 1440"], ["60 FPS", "90 FPS", "120 FPS", "144 FPS"]];
 }
 
 

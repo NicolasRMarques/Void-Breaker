@@ -35,7 +35,7 @@ A/D: virar
 L CLICK: atirar
 R CLICK: acelerar
 ESPAÇO: especial
-NUM 0: pause
+P: pause
 
 >>Aperte ENTER para iniciar<<");
 }
