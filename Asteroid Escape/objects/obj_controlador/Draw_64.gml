@@ -34,7 +34,7 @@ switch (room)
 			var c = c_white;
 			draw_text_transformed_colour(display_get_gui_width()/2, display_get_gui_height()/2, "Pause", 3, 3, 0, c, c, c, c, 1);
 			draw_set_halign(fa_left);
-			draw_text_transformed_colour(30, 30, "F1 - Reset", 1, 1, 0, c, c, c, c, 1);
+			draw_text_transformed_colour(30, 30, "ESC - Reset", 1, 1, 0, c, c, c, c, 1);
 			draw_set_halign(fa_center);
 			
 		}

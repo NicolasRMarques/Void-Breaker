@@ -28,7 +28,7 @@ if (keyboard_check_pressed(vk_enter))
 }
 
 if(room == rm_fase1){
-	if (keyboard_check_pressed(vk_numpad0)) {
+	if (keyboard_check_pressed(ord("P"))) {
 	    global.pause = !global.pause;
 
 	    if (global.pause) {
@@ -39,7 +39,7 @@ if(room == rm_fase1){
 	}
 	
 	if(global.pause){
-		if(keyboard_check_pressed(vk_f1)){
+		if(keyboard_check_pressed(vk_escape)){
 			score = 0;
 			room_goto(rm_inicio);
 	}

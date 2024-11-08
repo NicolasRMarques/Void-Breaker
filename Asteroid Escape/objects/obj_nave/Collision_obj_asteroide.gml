@@ -21,7 +21,7 @@ if (global.invincible_time == 0){
 	}
 	
 	if(lives <= 0){
-	instance_destroy();
+		instance_destroy();
 	} else {
 		global.invincible_time = 120;
 	}

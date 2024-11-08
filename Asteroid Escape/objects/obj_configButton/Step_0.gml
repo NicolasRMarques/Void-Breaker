@@ -17,14 +17,14 @@ if (global.configGUI == true){
 			global.configSelection = 0;
 		}
     }
-	if (keyboard_check_pressed(vk_left) or keyboard_check_pressed(ord("A"))) {
+	if (keyboard_check_pressed(vk_right) or keyboard_check_pressed(ord("D"))) {
 		if(global.configSelection + 2 <= array_length(global.configList[global.configOption])){
 			global.configSelection += 1;
 		} else {
 			global.configSelection = 0;
 		}
     }
-	if (keyboard_check_pressed(vk_right) or keyboard_check_pressed(ord("D"))) {
+	if (keyboard_check_pressed(vk_left) or keyboard_check_pressed(ord("A"))) {
         if(global.configSelection - 1  >= 0){
 			global.configSelection -= 1;
 		} else {
@@ -44,5 +44,31 @@ if(global.configList[0][0] == "Tela cheia") {
 } else if(global.configList[0][0] == "Janela"){
 	window_set_fullscreen(false);
 }
+
+if(global.configList[1][0] == "640 x 640") {
+    window_set_size(640, 640);
+    display_set_gui_size(640, 640);
+} else if(global.configList[1][0] == "1080 x 1080") {
+    window_set_size(1080, 1080);
+    display_set_gui_size(1080, 1080);
+} else if(global.configList[1][0] == "1440 x 1440") {
+    window_set_size(1440, 1440);
+    display_set_gui_size(1440, 1440);
+}
+
+if (global.configList[2][0] == "60 FPS") {
+	game_set_speed(60, gamespeed_fps);
+} else if (global.configList[2][0] == "120 FPS") {
+	game_set_speed(120, gamespeed_fps);
+} else if (global.configList[2][0] == "144 FPS") {
+	game_set_speed(144, gamespeed_fps);
+}
 	
+	
+if(keyboard_check(vk_escape)){
+	global.configGUI = false;
+	global.costumesGUI = false;
+	obj_configButton.image_index = 0;
+	obj_costumesButton.image_index = 0;
+}
 

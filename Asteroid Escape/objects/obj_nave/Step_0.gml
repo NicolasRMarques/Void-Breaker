@@ -1,5 +1,5 @@
 if (keyboard_check(ord("W"))){
-    speed = shipSpeed;
+    speed = global.shipSpeed;
 	instance_create_layer(x, y, "Instances", obj_particula); 
 	audio_play_sound(snd_nave,1,false);
 }
@@ -8,9 +8,9 @@ else{
 }
 
 if (keyboard_check(ord("A"))){
-    direction += turnSpeed;
+    direction += global.turnSpeed;
 }else if (keyboard_check(ord("D"))){
-    direction -= turnSpeed;
+    direction -= global.turnSpeed;
 }
 
 image_angle = direction;
@@ -23,7 +23,7 @@ if(global.ammo > 0){
 		audio_play_sound(snd_tiro,1,false);
 	    var inst = instance_create_layer(x, y, "Instances", obj_tiro);
 		inst.direction = direction;
-		inst.speed = 20;
+		inst.speed = 20 *60/room_speed;
 		inst.image_xscale = 2;
 		inst.image_yscale = 0.5;
 		inst.image_angle = direction;
@@ -36,7 +36,7 @@ if (global.special > 0){
 		audio_play_sound(snd_special,1,false)
 		repeat(10){
 		    var inst = instance_create_layer(x, y, "Instances", obj_tiro);
-			inst.speed = 8;
+			inst.speed = 8 *60/room_speed;
 			inst.image_xscale = 1;
 			inst.image_yscale = 1;
 			inst.image_angle = direction;
@@ -50,16 +50,16 @@ if (global.special > 0){
 }
 
 if (mouse_check_button(mb_right)) {
-    shipSpeed = 10;
-    turnSpeed = 8;
+    global.shipSpeed = 10*60/room_speed;
+	global.turnSpeed = 8*60/room_speed;
 } else {
-    shipSpeed = 8;
-    turnSpeed = 4;
+    global.shipSpeed = 8*60/room_speed;
+	global.turnSpeed = 4*60/room_speed;
 }
 
 if (global.invincible_time > 0) {
     image_alpha = 0.5;
-	global.invincible_time -= 1;
+	global.invincible_time -= 1*60/room_speed;
 
 } else {
     image_alpha = 1;

@@ -1,4 +1,4 @@
-speed = 5;
+speed = 5*60/room_speed;
 
 if (x == 1280) {
     image_xscale = -1;
