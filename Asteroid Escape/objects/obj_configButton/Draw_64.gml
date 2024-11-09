@@ -2,7 +2,7 @@ draw_set_font(fnt_retro);
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 var c = c_white;
-var guiSize = 2 * global.scaleGUI;
+var guiSize = 3 * global.scaleGUI;
 
 
 if(global.costumesGUI == true){
@@ -22,10 +22,10 @@ if(global.costumesGUI == true){
 		}
 	    var positionX = display_get_gui_width() / 2;
 	    var positionY = (display_get_gui_height() / (array_length(global.configList) + 1)) * (i + 1);
-	    draw_text_transformed_color(positionX, positionY, "< " + text + " >", guiSize, guiSize, 0, c, c, c, c, 1);
+	    draw_text_transformed_color(positionX, positionY, "< " + text + " >", 2*global.scaleGUI, 2*global.scaleGUI, 0, c, c, c, c, 1);
 	}
 	draw_set_halign(fa_left);
-	draw_text_transformed(40*global.scaleGUI, 40*global.scaleGUI,"Beta 1.0.1", global.scaleGUI, global.scaleGUI, image_angle);
+	draw_text_transformed(40*global.scaleGUI, 40*global.scaleGUI,global.version, global.scaleGUI, global.scaleGUI, image_angle);
 	draw_set_halign(fa_center);
 } else {
 		

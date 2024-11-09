@@ -43,5 +43,15 @@ if(room == rm_fase1){
 			score = 0;
 			room_goto(rm_inicio);
 	}
+	
+	}
 }
+
+if(!global.pause){
+	if (global.mouseCoolDown > 0) {
+		global.mouseCoolDown -= 1*60/room_speed;
+	} else {
+			cursor_sprite = spr_mouse;
+	}
 }
+

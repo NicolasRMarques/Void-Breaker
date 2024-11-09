@@ -61,10 +61,3 @@ if (global.invincible_time > 0) {
 } else {
     image_alpha = 1;
 }
-
-if (global.mouseCoolDown > 0) {
-	global.mouseCoolDown -= 1*60/room_speed;
-} else {
-    cursor_sprite = spr_mouse;
-}
-

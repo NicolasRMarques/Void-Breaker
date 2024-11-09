@@ -19,3 +19,5 @@ if(room == rm_inicio){
 cursor_sprite = spr_mouse;
 
 window_set_cursor(cr_none)
+
+global.mouseCoolDown = 0;
