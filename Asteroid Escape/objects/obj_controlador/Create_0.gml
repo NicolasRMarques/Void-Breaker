@@ -11,8 +11,11 @@ if (global.konami_activated){
 	global.special = 3;
 	global.ammo = 100;
 }
-global.scaleGUI = (display_get_gui_height() / 100) / 10
 
 if(room == rm_inicio){
 	global.konami_activated = false;
 }
+
+cursor_sprite = spr_mouse_shooting;
+
+window_set_cursor(cr_none)

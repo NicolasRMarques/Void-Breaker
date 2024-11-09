@@ -27,6 +27,9 @@ if(global.ammo > 0){
 		inst.image_xscale = 2;
 		inst.image_yscale = 0.5;
 		inst.image_angle = direction;
+		cursor_sprite = spr_mouse_shooting;
+	} else {
+		cursor_sprite = spr_mouse;
 	}
 }
 
@@ -50,17 +53,12 @@ if (global.special > 0){
 }
 
 if (mouse_check_button(mb_right)) {
-    global.shipSpeed = 10*60/room_speed;
-	global.turnSpeed = 8*60/room_speed;
-} else {
-    global.shipSpeed = 8*60/room_speed;
-	global.turnSpeed = 4*60/room_speed;
-}
+	direction = point_direction(x, y, mouse_x, mouse_y);
+} 
 
 if (global.invincible_time > 0) {
     image_alpha = 0.5;
 	global.invincible_time -= 1*60/room_speed;
-
 } else {
     image_alpha = 1;
 }

@@ -1,11 +1,11 @@
 global.costumesGUI = false;
 
+if(!variable_global_exists("scaleGUI")){
+	global.scaleGUI = 0.8;
+}
+
 image_index = 0;
 image_speed = 0;
-
-image_xscale = image_xscale * global.scaleGUI;
-image_yscale = image_yscale * global.scaleGUI;
-
 
 if (!variable_global_exists("costume")) {
     global.costume = 0;

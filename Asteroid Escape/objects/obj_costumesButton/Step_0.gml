@@ -35,4 +35,8 @@ if(global.konami_count == 10){
 	audio_play_sound(snd_picking,1,false)
 	global.konami_count = 0
 }
+
+image_xscale = global.scaleGUI * 640 / display_get_gui_height();
+image_yscale = global.scaleGUI * 640 / display_get_gui_height(); 
+
 	

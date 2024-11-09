@@ -6,7 +6,7 @@ switch (room)
 {
     case rm_fase1:
 		if(!global.pause){
-	        draw_text(display_get_gui_width()/2, 40, "Pontos: " + string(score));
+			draw_text_transformed(display_get_gui_width()/2, 40, "Pontos: " + string(score), global.scaleGUI, global.scaleGUI, image_angle);
 			
 			var max_per_row = 5;
 
@@ -32,9 +32,9 @@ switch (room)
 			
 		} else {
 			var c = c_white;
-			draw_text_transformed_colour(display_get_gui_width()/2, display_get_gui_height()/2, "Pause", 3, 3, 0, c, c, c, c, 1);
+			draw_text_transformed_colour(display_get_gui_width()/2, display_get_gui_height()/2, "Pause", 3*global.scaleGUI, 3*global.scaleGUI, 0, c, c, c, c, 1);
 			draw_set_halign(fa_left);
-			draw_text_transformed_colour(30, 30, "ESC - Reset", 1, 1, 0, c, c, c, c, 1);
+			draw_text_transformed_colour(30, 30, "ESC - Reset", 1*global.scaleGUI, 1*global.scaleGUI, 0, c, c, c, c, 1);
 			draw_set_halign(fa_center);
 			
 		}
@@ -42,14 +42,14 @@ switch (room)
 
 	case rm_derrota:
 	    var c = c_red;
-	    draw_text_transformed_colour(display_get_gui_width()/2, display_get_gui_height()/3, "GAME OVER", 3, 3, 0, c, c, c, c, 1);
-		draw_text(display_get_gui_width()/2, display_get_gui_height()/2, "Score: " + string(score));
-	    draw_text(display_get_gui_width()/2, display_get_gui_height()/2 + 50, "Aperte ENTER para Reiniciar");
+	    draw_text_transformed_colour(display_get_gui_width()/2, display_get_gui_height()/3, "GAME OVER", 3*global.scaleGUI, 3*global.scaleGUI, 0, c, c, c, c, 1);
+		draw_text_transformed(display_get_gui_width()/2, display_get_gui_height()/2, "Score: " + string(score), global.scaleGUI, global.scaleGUI, image_angle);
+		draw_text_transformed(display_get_gui_width()/2, display_get_gui_height()/2 + 50, "Aperte ENTER para Reiniciar", global.scaleGUI, global.scaleGUI, image_angle);
 	    break;
 
 	case rm_vitoria:
 	    var c = c_lime;
-	    draw_text_transformed_colour(display_get_gui_width()/2, display_get_gui_height()/3, "Vitória!", 3, 3, 0, c, c, c, c, 1);
-	    draw_text(display_get_gui_width()/2, display_get_gui_height()/2, "Aperte ENTER para Reiniciar");
+	    draw_text_transformed_colour(display_get_gui_width()/2, display_get_gui_height()/3, "Vitória", 3*global.scaleGUI, 3*global.scaleGUI, 0, c, c, c, c, 1);
+	    draw_text_transformed(display_get_gui_width()/2, display_get_gui_height()/2 + 50, "Aperte ENTER para Reiniciar", global.scaleGUI, global.scaleGUI, image_angle);
 	    break;
 }
