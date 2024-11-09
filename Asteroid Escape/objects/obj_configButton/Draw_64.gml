@@ -9,6 +9,7 @@ if(global.costumesGUI == true){
 	c = c_yellow;
 	draw_text_transformed_color(display_get_gui_width()/2, display_get_gui_height()/8, "Trajes", guiSize, guiSize, 0, c, c, c, c, 1);
 	draw_sprite_ext(spr_arrows, 0, display_get_gui_width()/2, display_get_gui_height() / 2, global.scaleGUI, global.scaleGUI, 0, -1, 1);
+	draw_text_transformed_color(display_get_gui_width()/2, display_get_gui_height()/8 * 6, "Aperte ENTER para selecionar", global.scaleGUI, global.scaleGUI, 0, c_white, c_white, c_white, c_white, 1);
 } else if (global.configGUI == true){
 	for (var i = 0; i < array_length(global.configList); i++) {
 		

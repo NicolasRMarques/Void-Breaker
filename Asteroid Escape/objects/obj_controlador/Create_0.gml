@@ -16,6 +16,6 @@ if(room == rm_inicio){
 	global.konami_activated = false;
 }
 
-cursor_sprite = spr_mouse_shooting;
+cursor_sprite = spr_mouse;
 
 window_set_cursor(cr_none)

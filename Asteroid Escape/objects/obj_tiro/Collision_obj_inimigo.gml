@@ -14,7 +14,7 @@ with(other){
         
         part.image_blend = make_color_rgb(irandom_range(200,255), irandom_range(100, 150), 0);
         
-        part.speed = random_range(2, 4);
+        part.speed = random_range(2, 4) * 60/room_speed;
         part.direction = random(360);
     }
 }

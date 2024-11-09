@@ -17,7 +17,7 @@ image_angle = direction;
 
 move_wrap(true, true, 0);
 
-if(global.ammo > 0){
+if(global.ammo > 0 and room == rm_fase1){
 	if (mouse_check_button_pressed(mb_left)) {
 		global.ammo -= 1;
 		audio_play_sound(snd_tiro,1,false);
@@ -28,8 +28,7 @@ if(global.ammo > 0){
 		inst.image_yscale = 0.5;
 		inst.image_angle = direction;
 		cursor_sprite = spr_mouse_shooting;
-	} else {
-		cursor_sprite = spr_mouse;
+		global.mouseCoolDown = 10;
 	}
 }
 
@@ -61,5 +60,11 @@ if (global.invincible_time > 0) {
 	global.invincible_time -= 1*60/room_speed;
 } else {
     image_alpha = 1;
+}
+
+if (global.mouseCoolDown > 0) {
+	global.mouseCoolDown -= 1*60/room_speed;
+} else {
+    cursor_sprite = spr_mouse;
 }
 
