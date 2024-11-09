@@ -9,7 +9,7 @@ if(global.costumesGUI == true){
 	c = c_yellow;
 	draw_text_transformed_color(display_get_gui_width()/2, display_get_gui_height()/8, "Trajes", guiSize, guiSize, 0, c, c, c, c, 1);
 	draw_sprite_ext(spr_arrows, 0, display_get_gui_width()/2, display_get_gui_height() / 2, global.scaleGUI, global.scaleGUI, 0, -1, 1);
-	draw_text_transformed_color(display_get_gui_width()/2, display_get_gui_height()/8 * 6, "Aperte ENTER para selecionar", global.scaleGUI, global.scaleGUI, 0, c_white, c_white, c_white, c_white, 1);
+	draw_text_transformed_color(display_get_gui_width()/2, display_get_gui_height()/10 * 8, "Aperte ENTER para selecionar", global.scaleGUI, global.scaleGUI, 0, c_white, c_white, c_white, c_white, 1);
 } else if (global.configGUI == true){
 	for (var i = 0; i < array_length(global.configList); i++) {
 		
@@ -24,6 +24,9 @@ if(global.costumesGUI == true){
 	    var positionY = (display_get_gui_height() / (array_length(global.configList) + 1)) * (i + 1);
 	    draw_text_transformed_color(positionX, positionY, "< " + text + " >", guiSize, guiSize, 0, c, c, c, c, 1);
 	}
+	draw_set_halign(fa_left);
+	draw_text_transformed(40*global.scaleGUI, 40*global.scaleGUI,"Beta 1.0.1", global.scaleGUI, global.scaleGUI, image_angle);
+	draw_set_halign(fa_center);
 } else {
 		
 var c = c_yellow;
