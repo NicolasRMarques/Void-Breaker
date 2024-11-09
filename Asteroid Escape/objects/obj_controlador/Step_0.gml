@@ -25,6 +25,8 @@ if (keyboard_check_pressed(vk_enter))
             room_goto(rm_inicio);
             break;
     }
+	
+	save_game();
 }
 
 if(room == rm_fase1){

@@ -17,6 +17,7 @@ if (global.costumesGUI == true) {
 		global.costume = spaceShip.image_index;
 		global.costumesGUI = !global.costumesGUI;
 		image_index = 0;
+		save_game();
 	}
 } else {
     if (instance_exists(obj_naveCostumes)) {
