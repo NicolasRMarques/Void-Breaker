@@ -63,6 +63,7 @@
     {"id":{"name":"spr_ammo","path":"sprites/spr_ammo/spr_ammo.yy",},},
     {"id":{"name":"spr_ammoBox","path":"sprites/spr_ammoBox/spr_ammoBox.yy",},},
     {"id":{"name":"spr_arrows","path":"sprites/spr_arrows/spr_arrows.yy",},},
+    {"id":{"name":"spr_asteroidAlert","path":"sprites/spr_asteroidAlert/spr_asteroidAlert.yy",},},
     {"id":{"name":"spr_asteroideG","path":"sprites/spr_asteroideG/spr_asteroideG.yy",},},
     {"id":{"name":"spr_asteroideM","path":"sprites/spr_asteroideM/spr_asteroideM.yy",},},
     {"id":{"name":"spr_asteroideP","path":"sprites/spr_asteroideP/spr_asteroideP.yy",},},

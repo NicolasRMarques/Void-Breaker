@@ -43,4 +43,8 @@ P: pause
 
 >>Aperte ENTER para iniciar<<", 
 global.scaleGUI, global.scaleGUI, image_angle);
+
+	if(global.konami == true){
+		draw_sprite_ext(spr_konamiCode, 0, display_get_gui_width()/2, display_get_gui_height() / 10 * 9, global.scaleGUI, global.scaleGUI, 0, -1, 1);
+	}
 }

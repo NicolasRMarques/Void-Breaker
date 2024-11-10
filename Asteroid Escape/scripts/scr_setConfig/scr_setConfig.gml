@@ -32,4 +32,10 @@ function setConfig(){
 	} else if (global.configList[3][0] == "GUI: 1.5x") {
 		global.scaleGUI = 1.5;
 	}
+	
+	if (global.configList[4][0] == "Som: Ativado") {
+		audio_master_gain(1);
+	} else if (global.configList[4][0] == "Som: Desativado") {
+		audio_master_gain(0);
+	}
 }

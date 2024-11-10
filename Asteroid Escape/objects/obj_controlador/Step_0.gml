@@ -4,6 +4,7 @@ if (lives <= 0){
 else if (score >= 5000){
 	score = 0;
 	room_goto(rm_vitoria);
+	global.konami = true;
 }
 
 if (keyboard_check_pressed(vk_enter))
@@ -44,8 +45,7 @@ if(room == rm_fase1){
 		if(keyboard_check_pressed(vk_escape)){
 			score = 0;
 			room_goto(rm_inicio);
-	}
-	
+		}
 	}
 }
 

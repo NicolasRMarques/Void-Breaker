@@ -20,6 +20,6 @@
   "resourceVersion":"2.0",
   "sampleRate":44100,
   "soundFile":"snd_kabum.wav",
-  "type":0,
-  "volume":0.7,
+  "type":1,
+  "volume":0.5,
 }
