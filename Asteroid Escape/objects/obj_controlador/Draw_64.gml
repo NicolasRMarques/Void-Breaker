@@ -30,7 +30,7 @@ switch (room)
 			draw_sprite_ext(spr_specialAmmo, global.special, display_get_gui_width() - 100, 170 * global.scaleGUI, global.scaleGUI, global.scaleGUI, 0, -1, 1);
 			
 			if(global.konami_activated){
-				draw_sprite_ext(spr_star, 0, 50,  display_get_gui_height() - 50, global.scaleGUI, global.scaleGUI, 0, -1, 1);
+				draw_sprite_ext(spr_star, 0,  100, display_get_gui_height() - 100, global.scaleGUI, global.scaleGUI, 0, -1, 1);
 			}
 			
 			if(global.clickCount >= 10){

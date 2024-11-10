@@ -60,4 +60,8 @@ if(keyboard_check(vk_escape) and (global.configGUI or global.costumesGUI)){
 }
 
 image_xscale = global.scaleGUI * 640 / display_get_gui_height();
-image_yscale = global.scaleGUI * 640 / display_get_gui_height(); 
+image_yscale = global.scaleGUI * 640 / display_get_gui_height();
+
+if(global.konami_activated){
+	global.konami = false;
+}
