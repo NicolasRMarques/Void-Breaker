@@ -20,9 +20,11 @@ function load_game(){
 	
 	if(file_exists("save.txt") and !file_text_eof(file)){
 		var json = file_text_read_string(file);
-		var struct = json_parse(json);
+		
+		var struct;
 		
 		try {
+			struct = json_parse(json);
 			global.costume = struct.costume;
 			global.configList = struct.configList;
 			global.konami = struct.konami;
