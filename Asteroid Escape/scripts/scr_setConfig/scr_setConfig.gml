@@ -1,4 +1,10 @@
 function setConfig(){
+	if(global.configList[0][0] == "Tela cheia") {
+		window_set_fullscreen(true);
+	} else if(global.configList[0][0] == "Janela"){
+		window_set_fullscreen(false);
+	}
+	
 	if (global.configList[1][0] == "640 x 640") {
 		window_set_size(640, 640);
 		display_set_gui_size(640, 640);
@@ -37,5 +43,14 @@ function setConfig(){
 		audio_master_gain(1);
 	} else if (global.configList[4][0] == "Som: Desativado") {
 		audio_master_gain(0);
+	}
+	
+	if (global.configList[5][0] == "Reset save") {
+		if(variable_global_exists("configOption")){
+			if(global.configOption == 5){
+				file_delete("save.txt");
+				game_end();
+			}
+		}
 	}
 }

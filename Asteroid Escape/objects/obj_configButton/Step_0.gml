@@ -40,12 +40,6 @@ if (global.configGUI == true){
 	}
 }
 
-if(global.configList[0][0] == "Tela cheia") {
-    window_set_fullscreen(true);
-} else if(global.configList[0][0] == "Janela"){
-	window_set_fullscreen(false);
-}
-
 if (keyboard_check_pressed(vk_enter)) {
 		display_reset(0, false);
 }

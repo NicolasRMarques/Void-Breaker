@@ -30,7 +30,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.6.2.162",
+    "IDEVersion":"2024.8.0.169",
   },
   "name":"Asteroid Escape",
   "resources":[
@@ -54,6 +54,7 @@
     {"id":{"name":"rm_vitoria","path":"rooms/rm_vitoria/rm_vitoria.yy",},},
     {"id":{"name":"scr_save","path":"scripts/scr_save/scr_save.yy",},},
     {"id":{"name":"scr_setConfig","path":"scripts/scr_setConfig/scr_setConfig.yy",},},
+    {"id":{"name":"scr_shipDestruction","path":"scripts/scr_shipDestruction/scr_shipDestruction.yy",},},
     {"id":{"name":"snd_kabum","path":"sounds/snd_kabum/snd_kabum.yy",},},
     {"id":{"name":"snd_nave","path":"sounds/snd_nave/snd_nave.yy",},},
     {"id":{"name":"snd_picking","path":"sounds/snd_picking/snd_picking.yy",},},

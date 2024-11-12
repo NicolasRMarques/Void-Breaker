@@ -51,7 +51,7 @@ function update(struct){
 		
 		var updatedConfigList = [["Janela", "Tela cheia"], ["640 x 640", "1080 x 1080", "1440 x 1440"], 
 		["60 FPS", "90 FPS", "120 FPS", "144 FPS"], ["GUI: 0.8x", "GUI: 1x", "GUI: 1.2x", "GUI: 1.5x"],
-		["Som: Ativado", "Som: Desativado"]];
+		["Som: Ativado", "Som: Desativado"],["Reset save"]];
 			
 		if(array_length(struct.configList) != array_length(updatedConfigList)){
 			global.configList = updatedConfigList;
