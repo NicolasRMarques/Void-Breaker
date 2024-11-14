@@ -32,7 +32,7 @@ if(global.costumesGUI == true){
 var c = c_yellow;
 draw_text_transformed_color(display_get_gui_width()/2, display_get_gui_height()/8, "Asteroid Escape", guiSize, guiSize, 0, c, c, c, c, 1);
 draw_text_transformed(display_get_gui_width()/2, display_get_gui_height()/2,
-		    @"Faça 5.000 pontos para ganhar
+		    @"Faça 10000 pontos para ganhar
 
 W: mover
 A/D: virar

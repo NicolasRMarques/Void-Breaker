@@ -4,12 +4,12 @@ if(sprite_index == spr_laser){
 
 audio_play_sound(snd_kabum,1,false);
 
-repeat(50){
-	instance_create_layer(x, y, "Instances", obj_particula);
-}
-
 with (other) {
     instance_destroy();
+	
+	repeat(50){
+		instance_create_layer(x, y, "Instances", obj_particula);
+	}
 
     if (sprite_index == spr_asteroideG) {
 		score += 40

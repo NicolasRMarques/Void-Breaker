@@ -4,7 +4,7 @@ global.configGUI = false;
 global.configOption = 0;
 global.configSelection = 0;
 
-global.version = "Beta 1.1.1"
+global.version = "Beta 1.2.0"
 
 global.konami_code = [
     vk_up, vk_up, vk_down, vk_down,

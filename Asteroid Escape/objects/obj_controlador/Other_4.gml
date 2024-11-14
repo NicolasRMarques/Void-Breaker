@@ -10,11 +10,14 @@ if (room == rm_fase1){
 	}
 }
 
-alarm[0] = 60*60/room_speed;
-alarm[1] = 60*60/room_speed;
-alarm[2] = 60*60/room_speed;
-alarm[3] = 60*60/room_speed;
-alarm[4] = 60*60/room_speed;
+fps_roomSpeed = 60*60/room_speed;
+
+alarm[0] = fps_roomSpeed;
+alarm[1] = fps_roomSpeed;
+alarm[2] = fps_roomSpeed;
+alarm[3] = fps_roomSpeed;
+alarm[4] = fps_roomSpeed;
+alarm[5] = fps_roomSpeed;
 
 if (!audio_is_playing(snd_placeholder)){
 	audio_play_sound(snd_placeholder,100,true);
