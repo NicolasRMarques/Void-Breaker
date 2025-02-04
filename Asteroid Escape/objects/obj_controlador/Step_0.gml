@@ -1,35 +1,34 @@
 if (lives <= 0){
-	room_goto(rm_derrota);
+	room_goto(rm_gameOver);
 } else if (score >= 10000){
 	score = 0;
-	room_goto(rm_vitoria);
-	global.konami = true;
+	room_goto(rm_blackHole);
 }
 
 if (keyboard_check_pressed(vk_enter))
 {
     switch(room)
     {
-        case rm_inicio:
+        case rm_start:
 			if(!global.costumesGUI and !global.configGUI){
 				score = 0;
-				room_goto(rm_fase1);
+				room_goto(rm_blackHole);
 			}
             break;
-        case rm_vitoria:
+        case rm_victory:
 			score = 0;
-            room_goto(rm_inicio);
+            room_goto(rm_start);
             break;
-        case rm_derrota:
+        case rm_gameOver:
 			score = 0;
-            room_goto(rm_inicio);
+            room_goto(rm_start);
             break;
     }
 	
 	save_game();
 }
 
-if(room == rm_fase1){
+if(room == rm_asteroids){
 	if (keyboard_check_pressed(ord("P"))) {
 	    global.pause = !global.pause;
 
@@ -43,7 +42,7 @@ if(room == rm_fase1){
 	if(global.pause){
 		if(keyboard_check_pressed(vk_escape)){
 			score = 0;
-			room_goto(rm_inicio);
+			room_goto(rm_start);
 		}
 	}
 }

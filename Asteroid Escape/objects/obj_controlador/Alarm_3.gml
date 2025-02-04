@@ -10,7 +10,7 @@ if(score >= 5000){
 
 up_down = choose(true, false);
 
-if(room == rm_fase1 and !global.pause){
+if(room == rm_asteroids and !global.pause){
 	if(up_down){
 		instance_create_layer(choose(0, 1280), irandom_range(10, 1270), "Instances", obj_inimigo);
 	} else {	

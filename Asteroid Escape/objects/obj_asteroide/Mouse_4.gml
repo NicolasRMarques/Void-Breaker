@@ -1,4 +1,4 @@
-if(room == rm_inicio or room == rm_vitoria or room == rm_derrota){
+if(room == rm_start or room == rm_victory or room == rm_gameOver){
 	audio_play_sound(snd_tiro,1,false);
 	audio_play_sound(snd_kabum,1,false);
 

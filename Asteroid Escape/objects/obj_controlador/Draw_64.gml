@@ -4,7 +4,7 @@ draw_set_valign(fa_middle);
 
 switch (room)
 {
-    case rm_fase1:
+    case rm_asteroids:
 		if(!global.pause){
 			draw_text_transformed(display_get_gui_width()/2, 40, "Pontos: " + string(score), global.scaleGUI, global.scaleGUI, image_angle);
 			
@@ -47,14 +47,14 @@ switch (room)
 		}
 		break;
 
-	case rm_derrota:
+	case rm_gameOver:
 	    var c = c_red;
 	    draw_text_transformed_colour(display_get_gui_width()/2, display_get_gui_height()/3, "GAME OVER", 3*global.scaleGUI, 3*global.scaleGUI, 0, c, c, c, c, 1);
 		draw_text_transformed(display_get_gui_width()/2, display_get_gui_height()/2, "Score: " + string(score), global.scaleGUI, global.scaleGUI, image_angle);
 		draw_text_transformed(display_get_gui_width()/2, display_get_gui_height()/2 + 50, "Aperte ENTER para Reiniciar", global.scaleGUI, global.scaleGUI, image_angle);
 	    break;
 
-	case rm_vitoria:
+	case rm_victory:
 	    var c = c_lime;
 	    draw_text_transformed_colour(display_get_gui_width()/2, display_get_gui_height()/3, "Vitória", 3*global.scaleGUI, 3*global.scaleGUI, 0, c, c, c, c, 1);
 	    draw_text_transformed(display_get_gui_width()/2, display_get_gui_height()/2 + 50, "Aperte ENTER para Reiniciar", global.scaleGUI, global.scaleGUI, image_angle);

@@ -17,7 +17,7 @@ image_angle = direction;
 
 move_wrap(true, true, 0);
 
-if(global.ammo > 0 and room == rm_fase1){
+if(global.ammo > 0 and global.canShoot){
 	if (mouse_check_button_pressed(mb_left)) {
 		global.ammo -= 1;
 		audio_play_sound(snd_tiro,1,false);
@@ -39,8 +39,7 @@ if (global.special > 0){
 		repeat(10){
 		    var inst = instance_create_layer(x, y, "Instances", obj_tiro);
 			inst.speed = 8 *60/room_speed;
-			inst.image_xscale = 1;
-			inst.image_yscale = 1;
+			inst.image_speed = 10;
 			inst.image_angle = direction;
 			inst.sprite_index = spr_especial
 		    inst.direction += dir;

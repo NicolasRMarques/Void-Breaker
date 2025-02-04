@@ -1,1 +1,1 @@
-layer_set_visible("Effect_Distortion", true);
+room_goto(rm_gameOver)

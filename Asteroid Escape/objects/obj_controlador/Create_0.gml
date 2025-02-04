@@ -1,4 +1,4 @@
-if(room == rm_inicio){
+if(room == rm_start){
 	global.konami_activated = false;
 }
 
@@ -12,7 +12,7 @@ if (global.konami_activated){
 	global.ammo = 100;
 }
 
-if(room == rm_inicio){
+if(room == rm_start){
 	global.konami_activated = false;
 }
 
@@ -22,4 +22,4 @@ window_set_cursor(cr_none)
 
 global.mouseCoolDown = 0;
 
-global.alienBlood = 0;
+global.canShoot = room == rm_asteroids or room == rm_blackHole; 
