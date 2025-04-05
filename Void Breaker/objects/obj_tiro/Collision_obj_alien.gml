@@ -1,4 +1,6 @@
-instance_destroy();
+if(sprite_index == spr_laser){
+	instance_destroy();
+}
 
 with(other){
 	instance_destroy();
