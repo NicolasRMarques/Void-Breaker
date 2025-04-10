@@ -111,6 +111,8 @@
     {"id":{"name":"spr_lifeBox","path":"sprites/spr_lifeBox/spr_lifeBox.yy",},},
     {"id":{"name":"spr_mouse_shooting","path":"sprites/spr_mouse_shooting/spr_mouse_shooting.yy",},},
     {"id":{"name":"spr_mouse","path":"sprites/spr_mouse/spr_mouse.yy",},},
+    {"id":{"name":"spr_nave_","path":"sprites/spr_nave_/spr_nave_.yy",},},
+    {"id":{"name":"spr_nave_1","path":"sprites/spr_nave_1/spr_nave_1.yy",},},
     {"id":{"name":"spr_nave","path":"sprites/spr_nave/spr_nave.yy",},},
     {"id":{"name":"spr_particula","path":"sprites/spr_particula/spr_particula.yy",},},
     {"id":{"name":"spr_picture","path":"sprites/spr_picture/spr_picture.yy",},},

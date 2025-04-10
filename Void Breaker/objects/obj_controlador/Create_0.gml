@@ -26,3 +26,11 @@ global.canShoot = room == rm_asteroids or room == rm_blackHole;
 global.bigShip = false;
 
 global.transition = 1;
+
+if(!variable_global_exists("clickCount")){
+	global.clickCount = 0;
+}
+
+if(global.clickCount >= 20 and room = rm_gameOver){
+	global.clickCount = 0;
+}

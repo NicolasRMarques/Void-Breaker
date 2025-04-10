@@ -19,10 +19,6 @@ if(!variable_global_exists("clickCount")){
 	global.clickCount = 0;
 }
 
-if(global.clickCount >= 20){
-	global.clickCount = 0;
-}
-
 image_index = 0;
 image_speed = 0;
 

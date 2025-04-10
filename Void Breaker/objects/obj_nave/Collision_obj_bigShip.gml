@@ -8,7 +8,7 @@ global.bigShip = true;
 
 lives = 10;
 
-score += 10000;
+score += 2000;
 
 global.special = 9;
 

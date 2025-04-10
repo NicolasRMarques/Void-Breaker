@@ -7,7 +7,7 @@ if(instance_exists(obj_nave)){
 	}
 }
 
-var inst = instance_create_layer(x, y, "Instances", obj_particula); 
+var inst = instance_create_depth(x, y, 100, obj_particula);
 
 inst.image_blend = alientrail;
 

@@ -1,6 +1,6 @@
 if (keyboard_check(ord("W"))){
     speed = global.shipSpeed;
-	instance_create_layer(x, y, "Instances", obj_particula); 
+	instance_create_depth(x, y, 100, obj_particula);
 	audio_play_sound(snd_nave,1,false);
 }
 else{
