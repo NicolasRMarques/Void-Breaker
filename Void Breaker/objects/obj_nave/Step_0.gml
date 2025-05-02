@@ -20,7 +20,7 @@ move_wrap(true, true, 0);
 if(global.ammo > 0 and global.canShoot){
 	if (mouse_check_button_pressed(mb_left)) {
 		
-		var inst = instance_create_layer(x, y, "Instances", obj_tiro);
+		var inst = instance_create_depth(x, y, 100, obj_tiro);
 		inst.direction = direction;
 		inst.image_angle = direction;
 		audio_play_sound(snd_tiro,1,false);
